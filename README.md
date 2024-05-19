@@ -5,7 +5,7 @@ This collection is work in progress - <b>any advice or errors are welcome!</b><b
 This is meant as a starting point / minimal, modern working example for someone new to the topic; I try to provide a lot of explanations<br/>
 <br/>
 <h1>Collection so far:</h2>
-<h2>GAN Example</h2>
+<h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/stableGAN.ipynb>GAN Example</a></h2>
 Simple (conditional) GAN, with modern generator/discriminator, built to produce MNIST characters.<br/>
 This version uses a more modern hinge-loss: don't train the discriminator/generator too much when they're already ahead, makes everything more stable;<br/>
 Also uses a more modern convolution architecture<br/>
