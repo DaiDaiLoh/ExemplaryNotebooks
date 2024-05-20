@@ -8,7 +8,7 @@ This is meant as a starting point / minimal, modern working example for someone 
 <h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/stableGAN.ipynb>GAN Example</a></h2>
 Simple (conditional) GAN, with modern generator/discriminator, built to produce MNIST characters.<br/>
 This version uses a more modern hinge-loss: don't train the discriminator/generator too much when they're already ahead, makes everything more stable;<br/>
-Also uses a more modern convolution architecture<br/>
+Also uses a more modern convolution architecture. Should output decent generations after 3 epochs.<br/>
 <br/>
 <b><u>Sources:</u></b> <br/>
 Original Paper: https://arxiv.org/abs/1406.2661<br/>
