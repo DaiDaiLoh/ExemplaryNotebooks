@@ -1,8 +1,8 @@
 </h1>Exemplary Notebooks</h1>
 Collection of simple examples in modified form, e.g. more stable GAN variants; All in ONE Notebook without many dependencies, no bells and whistles - just clean code examples<br/>
-This collection is work in progress - <b>any advice or errors are welcome!</b><br/>
+This collection is work in progress - <b>any advice, requests, or reports of errors are welcome!</b><br/>
 <br/>
-This is meant as a starting point / minimal, modern working example for someone new to the topic; I try to provide a lot of explanations<br/>
+This is meant as a starting point / minimal, modern working example for someone new to the topic, I try to provide a lot of practical explanations<br/>
 <br/>
 <h1>Collection so far:</h2>
 <h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/stableGAN.ipynb>GAN Example</a></h2>
