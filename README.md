@@ -10,6 +10,15 @@ Simple (conditional) GAN, with modern generator/discriminator, built to produce 
 This version uses a more modern hinge-loss: don't train the discriminator/generator too much when they're already ahead, makes everything more stable;<br/>
 Also uses a more modern convolution architecture. Should output decent generations after 3 epochs.<br/>
 <br/>
-<b><u>Sources:</u></b> <br/>
+<b><u>Sources/recommended reads:</u></b> <br/>
 Original Paper: https://arxiv.org/abs/1406.2661<br/>
 BigGAN, includes the techniques to create a nice and stable GAN: https://arxiv.org/abs/1809.11096<br/>
+______________________________________________________________________________________
+<h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/vqvae.ipynb>VQ-VAE Example</a></h2>
+Simple VQ-VAE, built to produce CIFAR images.<br/>
+Takes an input image, encodes it, quantises that to a number tokens, then decodes it.<br/>
+<br/>
+<b><u>Sources/recommended reads:</u></b> <br/>
+VQ-VAE:  https://arxiv.org/abs/1711.00937<br/>
+VQGAN: https://arxiv.org/abs/2012.09841<br/>
+Improved VQGAN: https://arxiv.org/abs/2310.05400 (mainly uses a Wasserstein discriminator and makes sure all codewords are used properly)
