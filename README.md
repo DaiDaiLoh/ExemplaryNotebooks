@@ -13,11 +13,12 @@ Also uses a more modern convolution architecture. Should output decent generatio
 <b><u>Sources/recommended reads:</u></b> <br/>
 Original Paper: https://arxiv.org/abs/1406.2661<br/>
 BigGAN, includes the techniques to create a nice and stable GAN: https://arxiv.org/abs/1809.11096<br/>
+Wasserstein GAN, regularising the discriminator gradient such that it always outputs something useful and we no longer have vanishing gradient: https://arxiv.org/abs/1701.07875<br/>
 <h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/vqvae.ipynb>VQ-VAE Example</a></h2>
 Simple VQ-VAE, built to produce CIFAR images.<br/>
 Takes an input image, encodes it, quantises that to a number tokens, then decodes it.<br/>
 <br/>
 <b><u>Sources/recommended reads:</u></b> <br/>
-VQ-VAE:  https://arxiv.org/abs/1711.00937<br/>
-VQGAN: https://arxiv.org/abs/2012.09841<br/>
-Improved VQGAN: https://arxiv.org/abs/2310.05400 (mainly uses a Wasserstein discriminator and makes sure all codewords are used properly)
+Original Paper:  https://arxiv.org/abs/1711.00937<br/>
+VQGAN, i.e. extra discriminator to "sharpen" the output and to "re-invent" high-frequent details (e.g. scales on a fish) that are not possible to encode: https://arxiv.org/abs/2012.09841<br/>
+Improved VQGAN, mainly uses a Wasserstein discriminator and makes sure all codewords are used properly: https://arxiv.org/abs/2310.05400
