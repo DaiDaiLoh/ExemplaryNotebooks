@@ -20,5 +20,5 @@ Takes an input image, encodes it, quantises that to a number tokens, then decode
 <br/>
 <b><u>Sources/recommended reads:</u></b> <br/>
 Original Paper:  https://arxiv.org/abs/1711.00937<br/>
-VQGAN, i.e. extra discriminator to "sharpen" the output and to "re-invent" high-frequent details (e.g. scales on a fish) that are not possible to encode: https://arxiv.org/abs/2012.09841<br/>
+VQGAN, i.e. extra discriminator to "sharpen" the output and to "re-invent" high-frequent details (e.g. scales on a fish) that usually get lost when compressing: https://arxiv.org/abs/2012.09841<br/>
 Improved VQGAN, mainly uses a Wasserstein discriminator and makes sure all codewords are used properly: https://arxiv.org/abs/2310.05400
