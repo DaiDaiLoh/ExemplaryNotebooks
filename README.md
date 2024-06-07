@@ -24,7 +24,7 @@ the discriminator (now called critic) to rather rate the input than to just bina
 In practise, that means we enforce the gradient to be 1 for every input to the critic, hence our generator has a much easier time<br/>
 to train.<br/><br/>
 <span style="color: red"><b>Should be understandable on its own, but I recommend to look at some GAN (see above) first</b></font><br/>
-</span>
+</span><br/>
 <b><u>Sources/recommended reads:</u></b> <br/>
 Original Paper (Wasserstein GAN): https://arxiv.org/abs/1701.07875<br/>
 Wasserstein GAN, but with gradient penalty (as we use here): https://arxiv.org/abs/1704.00028<br/>
