@@ -20,8 +20,8 @@ Wasserstein GAN, regularising the discriminator gradient such that it always out
 Simple Wasserstein GAN with gradient penalty (WGAN-GP). Simple version: A GAN, but much more well behaved because we regularise<br/>
 the discriminator (now called critic) to rather rate the input than to just binarily categorise it.<br/>
 In practise, that means we enforce the gradient to be 1 for every input to the critic, hence our generator has a much easier time<br/>
-to train.<br/>
-<font color=\"red\"><b>Should be understandable on it's own, but I recommend to look at some GAN (see above) first</b></font>
+to train.<br/><br/>
+<font color="red"><b>Should be understandable on it's own, but I recommend to look at some GAN (see above) first</b></font><br/>
 <br/>
 <b><u>Sources/recommended reads:</u></b> <br/>
 Original Paper (Wasserstein GAN): https://arxiv.org/abs/1701.07875<br/>
