@@ -16,7 +16,7 @@ BigGAN, includes the techniques to create a nice and stable GAN: https://arxiv.o
 Wasserstein GAN, regularising the discriminator gradient such that it always outputs something useful and we no longer have vanishing gradient: https://arxiv.org/abs/1701.07875<br/>
 
 
-<h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/WGAN.ipynb>Wasserstein GAN with Gradient Penalty (WGAN-GP) Example</a></h2>
+<h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/WGAN-GP.ipynb>Wasserstein GAN with Gradient Penalty (WGAN-GP) Example</a></h2>
 Simple Wasserstein GAN with gradient penalty (WGAN-GP). Simple version: A GAN, but much more well behaved because we regularise<br/>
 the discriminator (now called critic) to rather rate the input than to just binarily categorise it.<br/>
 In practise, that means we enforce the gradient to be 1 for every input to the critic, hence our generator has a much easier time<br/>
