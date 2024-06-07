@@ -14,6 +14,21 @@ Also uses a more modern convolution architecture. Should output decent generatio
 Original Paper: https://arxiv.org/abs/1406.2661<br/>
 BigGAN, includes the techniques to create a nice and stable GAN: https://arxiv.org/abs/1809.11096<br/>
 Wasserstein GAN, regularising the discriminator gradient such that it always outputs something useful and we no longer have vanishing gradient: https://arxiv.org/abs/1701.07875<br/>
+
+
+<h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/WGAN.ipynb>Wasserstein GAN with Gradient Penalty (WGAN-GP) Example</a></h2>
+Simple Wasserstein GAN with gradient penalty (WGAN-GP). Simple version: A GAN, but much more well behaved because we regularise<br/>
+the discriminator (now called critic) to rather rate the input than to just binarily categorise it.<br/>
+In practise, that means we enforce the gradient to be 1 for every input to the critic, hence our generator has a much easier time<br/>
+to train.<br/>
+<font color=\"red\"><b>Should be understandable on it's own, but I recommend to look at some GAN (see above) first</b></font>
+<br/>
+<b><u>Sources/recommended reads:</u></b> <br/>
+Original Paper (Wasserstein GAN): https://arxiv.org/abs/1701.07875<br/>
+Wasserstein GAN, but with gradient penalty (as we use here): https://arxiv.org/abs/1704.00028<br/>
+<br/>
+
+
 <h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/vqvae.ipynb>VQ-VAE Example</a></h2>
 Simple VQ-VAE, built to produce CIFAR images.<br/>
 Takes an input image, encodes it, quantises that to a number tokens, then decodes it.<br/>
