@@ -38,4 +38,20 @@ Takes an input image, encodes it, quantises that to a number tokens, then decode
 <b><u>Sources/recommended reads:</u></b> <br/>
 Original Paper:  https://arxiv.org/abs/1711.00937<br/>
 VQGAN, i.e. extra discriminator to "sharpen" the output and to "re-invent" high-frequent details (e.g. scales on a fish) that usually get lost when compressing: https://arxiv.org/abs/2012.09841<br/>
-Improved VQGAN, mainly uses a Wasserstein discriminator and makes sure all codewords are used properly: https://arxiv.org/abs/2310.05400
+Improved VQGAN makes sure all codewords are used properly and have more global information: https://arxiv.org/abs/2310.05400<br/>
+Producing global instead of local tokens, which makes better use of varying information content in an image, as a VQ-VAE essentially only uses "local" patches: QG-VAE / QGGAN https://arxiv.org/abs/2407.11913
+<br/>
+
+
+<h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/VQGAN.ipynb>VQGAN Example</a></h2>
+Simple VQ-GAN, built to produce ImageNet images, but also works on CIFAR.<br/>
+Takes an input image, encodes it, quantises that to a number tokens, then decodes it. Opposing to a VQ-VAE, this applies an additional "sharpening" to the output, re-inventing high-frequency details like the scales of a fish.<br/>
+<br/>
+<b><u>Sources/recommended reads:</u></b> <br/>
+VQ-VAE:  https://arxiv.org/abs/1711.00937<br/>
+VQGAN: https://arxiv.org/abs/2012.09841<br/>
+Improved VQGAN makes sure all codewords are used properly and have more global information: https://arxiv.org/abs/2310.05400<br/>
+Producing global instead of local tokens, which makes better use of varying information content in an image, as a VQ-VAE essentially only uses "local" patches: QG-VAE / QGGAN https://arxiv.org/abs/2407.11913
+<br/>
+
+
