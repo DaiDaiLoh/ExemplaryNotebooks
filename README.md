@@ -1,10 +1,12 @@
 </h1>Exemplary Notebooks</h1>
-Collection of simple examples in modified form, e.g. more stable GAN variants; All in ONE Notebook without many dependencies, no bells and whistles - just clean code examples<br/>
+Collection of simple visual deep learning examples in modified form, e.g. more stable GAN variants; All in ONE Notebook without many dependencies, no bells and whistles - just clean code examples<br/>
 This collection is work in progress - <b>any advice, requests, or reports of errors are welcome!</b><br/>
 <br/>
 This is meant as a starting point / minimal, modern working example for someone new to the topic, I try to provide a lot of practical explanations in the code itself<br/>
 <br/>
 <h1>Collection so far:</h2>
+<a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/stableGAN.ipynb>GAN</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/WGAN-GP.ipynb>WGAN-GP</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/vqvae.ipynb>VQ-VAE</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/VQGAN.ipynb>VQ-GAN</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/MNIST_AutoregressiveImageTransformer.ipynb>Autoregressive Transformer for image generation</a>
+<br/>
 <h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/stableGAN.ipynb>GAN Example</a></h2>
 Simple (conditional) GAN, with modern generator/discriminator, built to produce MNIST characters.<br/>
 This version uses a more modern hinge-loss: don't train the discriminator/generator too much when they're already ahead, makes everything more stable;<br/>
@@ -52,6 +54,17 @@ VQ-VAE:  https://arxiv.org/abs/1711.00937<br/>
 VQGAN: https://arxiv.org/abs/2012.09841<br/>
 Improved VQGAN makes sure all codewords are used properly and have more global information: https://arxiv.org/abs/2310.05400<br/>
 Producing global instead of local tokens, which makes better use of varying information content in an image, as a VQ-VAE essentially only uses "local" patches: QG-VAE / QGGAN https://arxiv.org/abs/2407.11913
+<br/>
+
+
+
+<h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/MNIST_AutoregressiveImageTransformer.ipynb>Autoregressive Image Generation Transformer</a></h2>
+Minimal example of a (encoder only) transformer that autoregressively produces greyscale values to produce MNIST. You can use this in combination with e.g. my VQGAN and some tweaking to produce actually nice images.<br/>
+<br/>
+<b><u>Sources/recommended reads:</u></b> <br/>
+The Transformer Paper, Vaswani et al.: https://arxiv.org/abs/1706.03762 (difficult read)<br/>
+(Alternative, that's a bit more understandable: https://jalammar.github.io/illustrated-transformer/ - note that this explains a full transformer, we need only the encoder part)<br/>
+Taming Transformers for High-Resolution Image Synthesis (VQGAN): https://arxiv.org/abs/2012.09841
 <br/>
 
 
