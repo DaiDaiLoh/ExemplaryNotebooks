@@ -5,7 +5,7 @@ This collection is work in progress - <b>any advice, requests, or reports of err
 This is meant as a starting point / minimal, modern working example for someone new to the topic, I try to provide a lot of practical explanations in the code itself<br/>
 <br/>
 <h1>Collection so far:</h2>
-<a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/stableGAN.ipynb>GAN</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/WGAN-GP.ipynb>WGAN-GP</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/vqvae.ipynb>VQ-VAE</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/VQGAN.ipynb>VQ-GAN</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/MNIST_AutoregressiveImageTransformer.ipynb>Autoregressive Transformer for image generation</a>
+<a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/stableGAN.ipynb>GAN</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/WGAN-GP.ipynb>WGAN-GP</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/vqvae.ipynb>VQ-VAE</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/VQGAN.ipynb>VQGAN</a> - <a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/MNIST_AutoregressiveImageTransformer.ipynb>Autoregressive Transformer for image generation</a>
 <br/>
 <h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/stableGAN.ipynb>GAN Example</a></h2>
 Simple (conditional) GAN, with modern generator/discriminator, built to produce MNIST characters.<br/>
@@ -46,7 +46,7 @@ Producing global instead of local tokens, which makes better use of varying info
 
 
 <h2><a href=https://github.com/DaiDaiLoh/ExemplaryNotebooks/blob/main/VQGAN.ipynb>VQGAN Example</a></h2>
-Simple VQ-GAN, built to produce ImageNet images, but also works on CIFAR.<br/>
+Simple VQGAN, built to produce ImageNet images, but also works on CIFAR.<br/>
 Takes an input image, encodes it, quantises that to a number tokens, then decodes it. Opposing to a VQ-VAE, this applies an additional "sharpening" to the output, re-inventing high-frequency details like the scales of a fish.<br/>
 <br/>
 <b><u>Sources/recommended reads:</u></b> <br/>
